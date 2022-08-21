@@ -20,15 +20,17 @@ class LetterFilter:
         self.s = s
 
     def filter_vowels(self):
-        # Enter your code here
-        # Return a string
-        return ""
+        for ch in "aeiou" :
+            if ch in s :
+                s = s.replace(ch,"")
+        return s
 
     def filter_consonants(self):
-        # Enter your code here
-        # Return a string
+        for ch in s :
+            if ch not in "aeiou" :
+                s = s.replace(ch,"")
         
-        return ""
+        return s
     
 ```
 
